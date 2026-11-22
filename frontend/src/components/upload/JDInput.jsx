@@ -1,7 +1,7 @@
 export default function JDInput({ value, onChange }) {
   return (
     <div>
-      <label className="text-sm font-medium block mb-2">Job description</label>
+      <label className="text-md font-medium block mb-2">Job description</label>
       <textarea
         rows={8}
         value={value}

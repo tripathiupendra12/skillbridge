@@ -12,14 +12,14 @@ export default function ApplicationHistory({ history = [] }) {
 
   return (
     <div>
-      <p className="text-sm font-medium mb-3">Recent analyses</p>
-      <div className="border border-gray-200 rounded-lg divide-y">
+      <p className="text-lg font-medium mb-3">Recent analyses</p>
+      <div className="w-2xl border border-gray-300 rounded-lg divide-y divide-gray-300">
         {history.map((item) => (
           <Link
             key={item._id}
             to="/result"
             state={item}
-            className="flex justify-between items-center px-4 py-3 text-sm hover:bg-gray-50 transition-colors"
+            className="flex justify-between items-center px-6 py-6 text-md hover:bg-gray-100 transition-colors"
           >
             <div className="min-w-0">
               <p className="font-medium truncate">{item.jobTitle}</p>

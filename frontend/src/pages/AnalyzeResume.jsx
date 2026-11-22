@@ -39,13 +39,13 @@ export default function AnalyzeResume() {
 
   return (
     <div className="max-w-xl mx-auto py-8 px-4 sm:py-10">
-      <h2 className="text-xl font-semibold mb-6">New analysis</h2>
+      <h2 className="text-2xl font-semibold mb-6">New analysis</h2>
 
       {error && (
         <div className="bg-red-50 text-red-700 text-sm rounded-lg p-3 mb-4">{error}</div>
       )}
 
-      <div className="flex flex-col gap-6">
+      <div className="flex w-xl flex-col gap-6">
         <ResumeUpload onFileSelect={setFile} />
         <JDInput value={jd} onChange={setJd} />
 

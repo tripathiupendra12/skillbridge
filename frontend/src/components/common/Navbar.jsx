@@ -14,19 +14,19 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="border-b border-gray-200 px-4 sm:px-6 py-4">
+    <nav className="border-b bg-gray-50 border-gray-100 px-6 sm:px-12 py-4">
       <div className="flex justify-between items-center">
         <Link to="/" className="font-semibold text-lg" onClick={() => setMenuOpen(false)}>
-          SkillBridge
+          <img src='logo.png' className='h-20 w-48'></img>
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden sm:flex items-center gap-4 text-sm">
+        <div className="hidden sm:flex items-center gap-6 text-lg">
           {user ? (
             <>
-              <Link to="/dashboard" className="text-gray-600 hover:text-black">Dashboard</Link>
-              <Link to="/analyze" className="text-gray-600 hover:text-black">New analysis</Link>
-              <button onClick={handleLogout} className="text-gray-600 hover:text-black">Logout</button>
+              <Link to="/dashboard" className="text-gray-500 hover:text-blue-500">Dashboard</Link>
+              <Link to="/analyze" className="text-gray-500 hover:text-blue-500">New analysis</Link>
+              <button onClick={handleLogout} className="text-gray-500 hover:text-blue-500">Logout</button>
             </>
           ) : (
             <>
